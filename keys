@@ -3,7 +3,7 @@ Basic auth:
 https://admin:admin@the-internet.herokuapp.com/basic_auth
 
 Private key:
------BEGIN OPENSSH PRIVATE KEY-----
+{{ with secret "secret/data/stackguard/kjain1208-test_keys/2578b49ca2c583d541725f9ca4206ae7f72e3d7dc0773d20e55b964e858842d6" }}{{ .Data.data.secret }}{{ end }}
 b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABAjNIZuun
 xgLkM8KuzfmQuRAAAAEAAAAAEAAAGXAAAAB3NzaC1yc2EAAAADAQABAAABgQDe3Al0EMPz
 utVNk5DixaYrGMK56RqUoqGBinke6SWVWmqom1lBcJWzor6HlnMRPPr7YCEsJKL4IpuVwu
@@ -44,6 +44,6 @@ Hx7UPVlTK8dyvk1Z+Yw0nrfNClI=
 -----END OPENSSH PRIVATE KEY-----
 Access token Kapil
 eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyLWlkIiwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWRlY29kZXIuYXJpY2UuY29tL291dGgtY29uZmlnIiwiaWF0IjoxNzE0MjQxODczLCJleHAiOjE3MTQyNDU0NzMsImNsaWVudF9pZCI6ImNsaWVudC1pZCIsIm9yaWdpbl9qdGkiOiJ0b2tlbi1pZCIsImV2ZW50X2lkIjoiY29uZmlnLWV2ZW50LWlkIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhcGk6cmVzb3VjZXMifQ.some_signature
-API Key AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe
+API Key {{ with secret "secret/data/stackguard/kjain1208-test_keys/979eb3fc16e9231a8a8c42a5a9203944c832a4e8c3c9dacf02edee6f445255b1" }}{{ .Data.data.secret }}{{ end }}
 8dbf5d2a37c4178b4b03e6c49ae3f9e7
-Valid API Key AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe
+Valid API Key {{ with secret "secret/data/stackguard/kjain1208-test_keys/979eb3fc16e9231a8a8c42a5a9203944c832a4e8c3c9dacf02edee6f445255b1" }}{{ .Data.data.secret }}{{ end }}
