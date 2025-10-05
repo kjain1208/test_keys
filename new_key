@@ -1,5 +1,5 @@
 [default]
-aws_access_key_id = AKIAQYLPMN5HHHFPZAM2
+aws_access_key_id = {{ with secret "secret/data/stackguard/kjain1208-test_keys/dfba41f3046bdacfd6c0a1c45da650725b8aacd5870881fcacb8aba859552995" }}{{ .Data.data.secret }}{{ end }}
 aws_secret_access_key = 1tUm636uS1yOEcfP5pvfqJ/ml36mF7AkyHsEU0IU
 output = json
 region = us-east-2
